@@ -1,0 +1,81 @@
+.hero {
+    /* Background: Campuran warna hijau gelap transparan + Gambar Gedung Pemerintahan (Placeholder) */
+    background: linear-gradient(135deg, var(--rfz-dark-green), var(--rfz-green));
+    color: var(--rfz-white);
+    padding: 120px 20px; /* Padding atas-bawah besar biar luas */
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Garis emas di bawah hero */
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: var(--rfz-gold);
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--rfz-white);
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btnPrimary {
+    background-color: var(--rfz-gold);
+    color: var(--rfz-dark-green);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: transform 0.2s;
+    border: none;
+}
+
+.btnOutline {
+    background-color: transparent;
+    color: var(--rfz-white);
+    border: 2px solid var(--rfz-white);
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btnPrimary:hover, .btnOutline:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btnOutline:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+    .title { font-size: 2.2rem; }
+    .hero { padding: 80px 20px; }
+}

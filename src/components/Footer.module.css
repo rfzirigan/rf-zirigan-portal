@@ -1,0 +1,79 @@
+.footer {
+    background-color: var(--rfz-dark-green);
+    color: white;
+    padding-top: 60px;
+    font-size: 0.95rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Kolom 1 lebih lebar */
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.brand {
+    color: var(--rfz-gold);
+    margin-bottom: 15px;
+}
+
+.address {
+    opacity: 0.8;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.emergency {
+    background: rgba(255,255,255,0.1);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border-left: 3px solid var(--rfz-red);
+}
+
+.col h4 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links a {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.textSmall {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.bottomBar {
+    background-color: #0d4224; /* Hijau lebih gelap lagi */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Jadi 1 kolom ke bawah */
+        gap: 30px;
+    }
+}

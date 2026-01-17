@@ -1,0 +1,93 @@
+.section {
+    padding: 80px 0;
+    background-color: var(--rfz-white);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.viewAll {
+    color: var(--rfz-green);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.imageWrapper {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover .image {
+    transform: scale(1.05);
+}
+
+.category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--rfz-gold);
+    color: var(--rfz-dark-green);
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 20px;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.title a:hover {
+    color: var(--rfz-green);
+}
+
+.excerpt {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}

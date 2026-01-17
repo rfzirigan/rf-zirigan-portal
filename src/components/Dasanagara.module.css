@@ -1,0 +1,55 @@
+.section {
+    padding: 80px 0;
+    background-color: #f4f8f5; /* Latar abu-hijau sangat muda */
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.header h2 {
+    color: var(--rfz-dark-green);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: var(--text-light);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--rfz-gold);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.number {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--rfz-gold);
+    opacity: 0.4;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.text {
+    font-weight: 600;
+    color: var(--rfz-dark-green);
+    font-size: 1.1rem;
+}

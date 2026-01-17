@@ -1,0 +1,124 @@
+.header {
+    text-align: center;
+    padding: 60px 0 40px;
+    background-color: #f8fcf9;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.header h1 { color: var(--rfz-dark-green); margin-bottom: 10px; }
+.header p { color: #666; }
+
+/* LAYOUT GRID: Sidebar (1 bagian) - Main (3 bagian) */
+.layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+/* SIDEBAR STYLES */
+.sidebar {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    height: fit-content;
+}
+
+.filterBox { margin-bottom: 25px; }
+.filterBox h3 { font-size: 0.95rem; margin-bottom: 10px; color: var(--rfz-dark-green); }
+
+.searchInput, .selectInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+.searchInput:focus, .selectInput:focus {
+    outline: none;
+    border-color: var(--rfz-green);
+    box-shadow: 0 0 0 3px rgba(31, 138, 76, 0.1);
+}
+
+/* TABLE STYLES */
+.main { flex-grow: 1; }
+.resultsInfo { margin-bottom: 15px; color: #666; font-size: 0.9rem; }
+
+.tableWrapper {
+    overflow-x: auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.table th {
+    background: var(--rfz-dark-green);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+    vertical-align: top;
+}
+
+.table tr:hover { background-color: #f9fdfa; }
+
+.colNomor { color: var(--rfz-dark-green); font-size: 0.9rem; }
+.colTentang { font-weight: 500; line-height: 1.5; }
+
+/* BADGES */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.badgeActive { background: #e6f4ea; color: #1e8e3e; }
+.badgeInactive { background: #fce8e6; color: #c5221f; }
+
+/* BUTTONS */
+.btnDownload {
+    display: inline-block;
+    background: white;
+    color: var(--rfz-dark-green);
+    border: 1px solid var(--rfz-green);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btnDownload:hover {
+    background: var(--rfz-green);
+    color: white;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 50px;
+    color: #888;
+    border: 2px dashed #eee;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .layout { grid-template-columns: 1fr; } /* Sidebar pindah ke atas di HP */
+}

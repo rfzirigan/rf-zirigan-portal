@@ -1,0 +1,45 @@
+/* Import Font dari Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700;900&display=swap');
+
+:root {
+    /* PALET WARNA RESMI RFZ */
+    --rfz-green: #1F8A4C;       /* Hijau Utama */
+    --rfz-dark-green: #145e33;  /* Hijau Gelap (Teks/Footer) */
+    --rfz-gold: #D4AF37;        /* Emas (Aksen/Button) */
+    --rfz-red: #c0392b;         /* Merah (Alert) */
+    --rfz-white: #ffffff;
+    --rfz-bg: #f8fcf9;          /* Background halaman agak kehijauan dikit */
+
+    --text-dark: #1a2e22;
+    --text-light: #526358;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--rfz-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: var(--rfz-dark-green);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utility Class untuk Container agar rapi di tengah */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

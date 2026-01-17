@@ -1,0 +1,50 @@
+.servicesSection {
+    padding: 0 20px;
+    margin-top: -60px; /* Efek overlap naik ke atas Hero sedikit */
+    position: relative;
+    z-index: 10;
+    margin-bottom: 80px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Bayangan halus */
+    border-left: 4px solid var(--rfz-green);
+    transition: transform 0.3s, border-color 0.3s;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-left-color: var(--rfz-gold);
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    flex-grow: 1; /* Biar panah selalu di bawah */
+}
+
+.arrow {
+    font-weight: 600;
+    color: var(--rfz-green);
+    font-size: 0.9rem;
+}

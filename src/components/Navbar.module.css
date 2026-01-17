@@ -1,0 +1,84 @@
+.navbar {
+    background-color: var(--rfz-white);
+    padding: 1rem 0;
+    box-shadow: 0 4px 20px rgba(31, 138, 76, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-top: 5px solid var(--rfz-gold);
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.logoPlaceholder {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--rfz-gold), var(--rfz-green));
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.brandText h1 {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.2;
+    color: var(--rfz-green);
+}
+
+.brandText span {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navLinks a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.navLinks a:hover {
+    color: var(--rfz-green);
+}
+
+.btnServices {
+    background-color: var(--rfz-gold);
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: var(--rfz-dark-green) !important;
+    font-weight: 700 !important;
+}
+
+/* Tambahkan ini di paling bawah */
+@media (max-width: 768px) {
+    .navLinks {
+        display: none; /* Sembunyikan menu di layar HP sementara */
+    }
+
+    .navContainer {
+        justify-content: center; /* Logo jadi di tengah */
+    }
+}

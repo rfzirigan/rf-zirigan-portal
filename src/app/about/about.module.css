@@ -1,0 +1,56 @@
+.header {
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+.section {
+    padding: 40px 0;
+    border-bottom: 1px dashed #eee;
+}
+.symbolGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+.symbolCard {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.flagPlaceholder {
+    height: 100px;
+    background: linear-gradient(to bottom, var(--rfz-green) 50%, var(--rfz-gold) 50%);
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.emblemPlaceholder {
+    font-size: 3rem;
+    color: var(--rfz-gold);
+}
+/* Org Chart Simple */
+.orgChart {
+    text-align: center;
+    margin-top: 30px;
+}
+.boxTop, .box {
+    border: 2px solid var(--rfz-green);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 6px;
+    font-weight: bold;
+    background: white;
+}
+.line {
+    height: 20px;
+    width: 2px;
+    background: var(--rfz-green);
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}

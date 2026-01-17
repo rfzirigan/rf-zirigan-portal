@@ -1,0 +1,178 @@
+/* Container Utama */
+.container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Halaman Index */
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+
+.header h1 {
+    color: var(--rfz-dark-green);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Grid Layout (Daftar Berita) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Kartu Berita */
+.card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--rfz-green);
+}
+
+.imageWrapper {
+    height: 220px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover .imageWrapper img {
+    transform: scale(1.05);
+}
+
+.cardContent {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Metadata (Kategori & Tanggal) */
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+
+.category {
+    background-color: var(--rfz-gold);
+    color: var(--rfz-dark-green);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.date {
+    color: #888;
+}
+
+/* Judul & Link */
+.title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: var(--rfz-dark-green);
+    font-family: 'Merriweather', serif;
+}
+
+.title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.readMore {
+    margin-top: auto; /* Dorong ke paling bawah */
+    color: var(--rfz-green);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.readMore:hover {
+    text-decoration: underline;
+}
+
+/* --- STYLE UNTUK HALAMAN DETAIL (BACA BERITA) --- */
+
+.detailContainer {
+    max-width: 800px; /* Lebih sempit biar enak dibaca */
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.backLink:hover {
+    color: var(--rfz-green);
+}
+
+.detailHeader {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.detailTitle {
+    font-size: 2.5rem;
+    color: var(--rfz-dark-green);
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.detailImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.articleBody {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Merriweather', serif; /* Serif enak buat baca panjang */
+}
+
+/* Agar paragraf ada jaraknya */
+.articleBody p {
+    margin-bottom: 20px;
+}
