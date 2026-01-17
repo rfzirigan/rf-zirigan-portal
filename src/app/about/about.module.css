@@ -54,3 +54,13 @@
     gap: 20px;
     flex-wrap: wrap;
 }
+.symbolImage {
+    width: 100%; /* Agar responsif di HP */
+    max-width: 200px; /* INI KUNCINYA: Maksimal lebar cuma 200px */
+    height: auto; /* Tinggi menyesuaikan biar ga gepeng */
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Biar tengah */
+}

@@ -18,11 +18,11 @@ const Navbar = () => {
                 <div className={styles.navLinks}>
                     <Link href="/">Beranda</Link>
                     <Link href="/about">Tentang RFZ</Link>
-                    <Link href="/departemen">Dapartemen</Link>
+                    <Link href="/lembaga">Lembaga Negara</Link>
                     <Link href="/kuhn">E-Legislative</Link>
                     <Link href="/contact">Hubungi Kami</Link>
                     
-                    <Link href="/services" className={styles.btnServices}>Layanan Publik</Link>
+                    <Link href="/layanan" className={styles.btnServices}>Layanan Publik</Link>
                 </div>
             </div>
         </nav>

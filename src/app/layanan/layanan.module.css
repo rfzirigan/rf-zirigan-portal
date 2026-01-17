@@ -1,0 +1,98 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #fcfcfc;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: 3px solid #D4AF37; /* Emas */
+    padding-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #145e33; /* Hijau Zirigan */
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Category Section */
+.categoryBlock {
+    margin-bottom: 60px;
+}
+
+.categoryTitle {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-left: 6px solid #1F8A4C;
+    padding-left: 15px;
+}
+
+.categoryDesc {
+    margin-bottom: 20px;
+    color: #555;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+/* Quote Box Special */
+.quoteBox {
+    background-color: #fff3cd; /* Kuning Pucat */
+    border: 1px solid #ffeeba;
+    border-left: 5px solid #ffc107;
+    color: #856404;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.quoteIcon {
+    font-size: 1.5rem;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: #1F8A4C;
+    box-shadow: 0 5px 15px rgba(31, 138, 76, 0.1);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #145e33;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}

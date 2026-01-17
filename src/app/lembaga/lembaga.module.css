@@ -1,0 +1,103 @@
+.container {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h1 {
+    color: #145e33;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Category Section */
+.categorySection {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-left: 5px solid #D4AF37; /* Aksen Emas */
+}
+
+.categoryHeader {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.categoryHeader h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.categoryHeader p {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Card Style */
+.card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: #1F8A4C;
+    box-shadow: 0 5px 15px rgba(31, 138, 76, 0.1);
+}
+
+.cardIcon {
+    font-size: 2rem;
+    background: #f0fdf4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.cardContent h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.leader {
+    font-size: 0.85rem;
+    color: #888;
+    display: block;
+}
+
+.arrow {
+    margin-left: auto; /* Dorong panah ke kanan mentok */
+    color: #ccc;
+    font-weight: bold;
+}
+
+.card:hover .arrow {
+    color: #1F8A4C;
+}
